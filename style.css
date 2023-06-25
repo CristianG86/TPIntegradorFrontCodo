@@ -327,3 +327,7 @@ header{
     margin-top: 1rem; 
 }
 
+.blue{
+    background-color: pink;
+    color: blue;
+}

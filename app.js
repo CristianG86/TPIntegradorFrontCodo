@@ -10,6 +10,21 @@ function success(){
     icon: 'succes',
 })}
 
+let botonsummary = document.getElementById("botonsummary")
+let count = 0;
+function changebgc(){
+    if(count === 0){
+        alertEl.classList.add('blue');
+        count = 1;
+    }
+    else{
+        alertEl.classList.remove('blue');
+        count = 0;
+    }
+
+}
+botonsummary.addEventListener('click',changebgc ,true)
+
 function summary() {
     let amountEl = Math.ceil(document.getElementById("inputamount").value)
     let categoryEl = document.getElementById("categoria-el").value
