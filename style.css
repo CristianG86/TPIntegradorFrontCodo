@@ -224,45 +224,6 @@ header{
     margin-left: 2rem;
 }
 
-#cardticketcontainer{
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-    min-width: 60%;
-}
-
-.cardticket {
-    display:inline-block;
-    margin-top: 1.2rem;
-    margin-bottom: 0.2rem;
-    padding: 1rem;
-    min-width: 20%;
-}
-
-.middlecardticket {
-    margin-left: 0.2rem;
-    margin-right: 0.2rem;
-}
-
-
-.cardtickettext h5{
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardtickettext p{
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cardtickettext h5 {
-    font-weight: 550;
-}
-
 .cardsubtitle {
     font-size: 1rem;;
     align-items: center;
@@ -292,6 +253,7 @@ header{
     font-size: 1rem;
     margin-bottom: 0.1rem;
 }
+
 
 .formtickets{
     margin-right: 20%;
@@ -331,3 +293,53 @@ header{
     background-color: pink;
     color: blue;
 }
+
+#cardticketcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    min-width: 60%;
+}
+
+.cardticket {
+    display:inline-block;
+    margin-top: 1.2rem;
+    margin-bottom: 0.2rem;
+    padding: 1rem;
+    min-width: 20%;
+    text-decoration: none;
+}
+
+.cardticket:hover{
+    background-color: #9BE8D8;
+}
+
+.cardtickettext h5{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 550;
+}
+
+.cardtickettext p{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardestudiante{
+
+    max-width: 18rem; border: 2px solid blue
+}
+
+.cardtrainee {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    max-width: 18rem; border: 2px solid green
+}
+
+.cardjunior{
+    max-width: 18rem; border: 2px solid orange;
+}   

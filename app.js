@@ -3,6 +3,9 @@ let alertEl = document.getElementById("alert-el")
 let alertDiv = document.getElementById("alertcont")
 document.getElementById("inputamount").value = 1
 
+let buttonestudiante = document.getElementById("buttonestudiante")
+let buttontrainee = document.getElementById("buttontrainee")
+let buttonjunior = document.getElementById("buttonjunior")
 function success(){
     Swal.fire({ 
     title: '¡Excelente!',
@@ -24,6 +27,23 @@ function changebgc(){
 
 }
 botonsummary.addEventListener('click',changebgc ,true)
+
+function selectestudiante (){
+
+    document.getElementById("categoria-el").value = "estudiante"
+}
+function selecttrainee (){
+
+    document.getElementById("categoria-el").value = "trainee"
+}
+function selectjunior (){
+
+    document.getElementById("categoria-el").value = "junior"
+}
+
+buttonestudiante.addEventListener('click',selectestudiante,true)
+buttontrainee.addEventListener('click',selecttrainee,true)
+buttonjunior.addEventListener('click',selectjunior,true)
 
 function summary() {
     let amountEl = Math.ceil(document.getElementById("inputamount").value)
@@ -69,7 +89,6 @@ function summary() {
         success()
     }
 }
-
 
 
 function erase() {
